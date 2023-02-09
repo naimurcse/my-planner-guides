@@ -122,7 +122,39 @@ body{
 
 
 /* My Plans Section Start */
-.my-plans{}
-.my-plans__title{}
-.my-plans__content{}
+.my-plans{
+    padding: 80px 200px;
+}
+.my-plans__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #151414;
+    margin-bottom: 60px;
+}
+.my-plans__content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.my-plans__skill{}
+.my-plans__icon{
+    width: 92px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.my-plans__skill-title{
+    font-weight: 700;
+    font-size: 26px;
+    color: #151414;
+    margin-bottom: 10px;
+}
+.my-plans__skill-description{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #737272;
+}
 /* My Plans Section End */
