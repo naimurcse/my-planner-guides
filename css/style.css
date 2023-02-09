@@ -64,11 +64,14 @@ body{
     /* text-align: right; */
     display: inline-block;
     text-align: right;
+}
+
+.primary-btn{
     color: #005FAC;
     background-color: #FFFFFF;
 }
 
-.header__btn:hover{
+.primary-btn:hover{
     background-color: #005FAC;
     color: #FFFFFF;
     box-shadow: 5px 5px 15px #024978;
@@ -158,3 +161,6 @@ body{
     color: #737272;
 }
 /* My Plans Section End */
+
+/* Call To Action Section Start */
+/* Call To Action Section End */
