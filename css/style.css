@@ -75,3 +75,47 @@ body{
 }
 
 /* Header Section End */
+
+/* Previous Year Section Start */
+.previous-year{
+    padding: 80px 200px;
+    display: flex;
+    align-items: center;
+}
+.previous-year__image{
+    padding: 30px;
+}
+
+.previous-year__image img{
+    max-width: 550px;
+}
+
+
+.previous-year__content{
+    padding: 30px;
+}
+
+.previous-year__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    margin-bottom: 24px;
+}
+.previous-year__description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+    margin-bottom: 16px;
+}
+
+.previous-year__todo-list{}
+.previous-year__list-item{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;  
+    color: #444343;
+}
+
+/* Previous Year Section End */
