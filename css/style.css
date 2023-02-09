@@ -163,4 +163,25 @@ body{
 /* My Plans Section End */
 
 /* Call To Action Section Start */
+.call-to-action{
+    height: 300px;
+    margin: 80px 200px;
+    padding: 0 65px;
+    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-blend-mode: hard-light;
+}
+.call-to-action__content{
+    width: 60%;
+}
+.call-to-action__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
 /* Call To Action Section End */
