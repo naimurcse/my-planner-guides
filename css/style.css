@@ -127,8 +127,6 @@ body {
     align-items: center;
 }
 
-.previous-year__image {}
-
 .previous-year__image img {
     max-width: 530px;
 }
@@ -190,8 +188,6 @@ body {
     justify-content: space-between;
     text-align: center;
 }
-
-.my-plans__skill {}
 
 .my-plans__icon {
     width: 80px;
@@ -364,9 +360,6 @@ body {
     box-shadow: rgba(108, 187, 240, 0.737) 0px 0px 20px;
 }
 
-.footer__subscribe {
-    /* width: 50%; */
-}
 
 .footer__subscribe-title {
     font-weight: 600;
