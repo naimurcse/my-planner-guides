@@ -1,77 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family:'Work Sans', sans-serif;
+body {
+    font-family: 'Work Sans', sans-serif;
 
 }
+
 /* Button Style Start*/
-.btn{
+.btn {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     text-align: right;
     cursor: pointer;
-    
+
     padding: 16px 26px;
     border: none;
     border-radius: 5px;
 
     transition: all 0.3s ease;
 }
+
 /* Button Style End*/
 
 
 /* Header Section Start */
-.header{
-    background-image: url(../images/banner/banner3.png);
+.header {
+    background-image: url(../images/banner/banner-illustration.png), url(../images/banner/banner-bg.png);
     height: 100vh;
     width: 100%;
-    background-size: cover;
+    background-size: contain, cover;
 
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: block;
+    background-image: linear-gradient(297.52deg, #0478B9 18.76%, rgba(4, 120, 185, 0.9) 43.62%, rgba(4, 120, 185, 0) 75.48%);
+}
+
+.header__container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 120px;
 }
 
-.header__content{
-    margin: 0 120px;
-    width: 36%;
+.header__content {
+    /* margin: 0 120px; */
+    width: 45%;
+    z-index: 2;
+    text-align: right;
 }
 
-.header__title{
+.header__title {
     font-weight: 700;
     font-size: 60px;
     line-height: 76px;
-    text-align: right;
+    /* text-align: right; */
     color: #FFFFFF;
     margin-bottom: 24px;
 }
 
-.header__description{
+.header__description {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    text-align: right;
+    /* text-align: right; */
     color: #FFFFFF;
     margin-bottom: 32px;
 }
-.header__btn{
+
+.header__btn {
     /* width: max-content; */
     /* text-align: right; */
-    display: inline-block;
-    text-align: right;
+    /* display: inline-block; */
+    /* text-align: right; */
 }
 
-.primary-btn{
+.primary-btn {
     color: #005FAC;
     background-color: #FFFFFF;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
     background-color: #005FAC;
     color: #FFFFFF;
     box-shadow: 5px 5px 15px #024978;
@@ -80,32 +104,34 @@ body{
 /* Header Section End */
 
 /* Previous Year Section Start */
-.previous-year{
+.previous-year {
     padding: 80px 200px;
     display: flex;
     align-items: center;
 }
-.previous-year__image{
+
+.previous-year__image {
     padding: 30px;
 }
 
-.previous-year__image img{
+.previous-year__image img {
     max-width: 550px;
 }
 
 
-.previous-year__content{
+.previous-year__content {
     padding: 30px;
 }
 
-.previous-year__title{
+.previous-year__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
     color: #151414;
     margin-bottom: 24px;
 }
-.previous-year__description{
+
+.previous-year__description {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -113,11 +139,12 @@ body{
     margin-bottom: 16px;
 }
 
-.previous-year__todo-list{}
-.previous-year__list-item{
+.previous-year__todo-list {}
+
+.previous-year__list-item {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;  
+    line-height: 26px;
     color: #444343;
 }
 
@@ -125,10 +152,11 @@ body{
 
 
 /* My Plans Section Start */
-.my-plans{
+.my-plans {
     padding: 80px 200px;
 }
-.my-plans__title{
+
+.my-plans__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -136,34 +164,40 @@ body{
     color: #151414;
     margin-bottom: 60px;
 }
-.my-plans__content{
+
+.my-plans__content {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.my-plans__skill{}
-.my-plans__icon{
+
+.my-plans__skill {}
+
+.my-plans__icon {
     width: 92px;
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
 }
-.my-plans__skill-title{
+
+.my-plans__skill-title {
     font-weight: 700;
     font-size: 26px;
     color: #151414;
     margin-bottom: 10px;
 }
-.my-plans__skill-description{
+
+.my-plans__skill-description {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     color: #737272;
 }
+
 /* My Plans Section End */
 
 /* Call To Action Section Start */
-.call-to-action{
+.call-to-action {
     height: 300px;
     margin: 80px 200px;
     padding: 0 65px;
@@ -174,18 +208,81 @@ body{
     align-items: center;
     background-blend-mode: hard-light;
 }
-.call-to-action__content{
+
+.call-to-action__content {
     width: 60%;
 }
-.call-to-action__title{
+
+.call-to-action__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
     color: #FFFFFF;
     margin-bottom: 24px;
 }
+
 /* Call To Action Section End */
 
 /* Footer Start */
+.footer {
+    padding: 120px 200px;
+    background-color: #151414;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer__details {
+    padding-right: 150px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #F8F8F8;
+    margin-bottom: 24px;
+}
+
+.footer__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer__social-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer__social-icon {
+    cursor: pointer;
+    transition: all 0.4s;
+
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.footer__social-icon img {
+    width: 100%;
+    display: block;
+}
+
+.footer__social-icon:hover {
+    transform: scale(.9);
+    box-shadow: 0 0 20px #6cbbf0bc;
+}
+
+.footer__subscribe {}
+
+.footer__subscribe-title {}
+
+.footer__subscribe-input {}
+
+.footer__subscribe-btn {}
 
 /* Footer End */
