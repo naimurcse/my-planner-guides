@@ -9,8 +9,8 @@ body {
 }
 
 .btn {
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 23px;
     text-align: right;
     cursor: pointer;
@@ -83,6 +83,18 @@ body {
     box-shadow: rgb(2, 73, 120) 5px 5px 15px;
     letter-spacing: 1.5px;
 }
+
+.secondary-btn {
+    background-color: rgb(255, 212, 46);
+    color: rgb(51, 51, 51);
+}
+
+.secondary-btn:hover {
+    color: rgb(4, 120, 185);
+    background-color: rgb(255, 255, 255);
+    letter-spacing: 1.5px;
+}
+
 
 .previous-year {
     padding: 80px 160px;
@@ -162,7 +174,7 @@ body {
 .my-plans__skill-title {
     font-weight: 700;
     font-size: 24px;
-    color: #333;
+    color: rgb(51, 51, 51);
     margin-bottom: 5px;
 }
 
@@ -203,11 +215,12 @@ body {
 }
 
 .footer-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .footer__details {
-    padding-right: 150px;
+    padding-right: 110px;
 }
 
 .footer-title {
@@ -222,7 +235,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    color: rgb(255, 255, 255);
+    color: rgb(255 255 255 / 85%);
     margin-bottom: 15px;
 }
 
@@ -249,10 +262,28 @@ body {
     box-shadow: rgba(108, 187, 240, 0.737) 0px 0px 20px;
 }
 
-.footer__subscribe {}
+.footer__subscribe {
+    /* width: 50%; */
+}
 
-.footer__subscribe-title {}
+.footer__subscribe-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
 
-.footer__subscribe-input {}
+.footer__subscribe-input {
+    padding: 16px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
 
 .footer__subscribe-btn {}
