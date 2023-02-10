@@ -8,6 +8,7 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
+/* Buttons Start */
 .btn {
     font-weight: 500;
     font-size: 18px;
@@ -20,6 +21,52 @@ body {
     transition: all 0.3s ease 0s;
 }
 
+.btn-small {
+    display: inline-block;
+    border: 1px solid rgb(64, 64, 64);
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.btn-small:hover {
+    letter-spacing: 1.5px;
+    color: rgb(4, 120, 185);
+    border: 1px solid rgb(4, 120, 185);
+}
+
+
+.primary-btn {
+    color: rgb(4, 120, 185);
+    background-color: rgb(255, 255, 255);
+}
+
+.primary-btn:hover {
+    background-color: rgb(255, 212, 46);
+    color: rgb(51, 51, 51);
+    box-shadow: rgb(2, 73, 120) 5px 5px 15px;
+    letter-spacing: 1.5px;
+}
+
+.secondary-btn {
+    background-color: rgb(255, 212, 46);
+    color: rgb(51, 51, 51);
+}
+
+.secondary-btn:hover {
+    color: rgb(4, 120, 185);
+    background-color: rgb(255, 255, 255);
+
+    letter-spacing: 1.5px;
+}
+/* Buttons End*/
+
+
+/* Header Section Start */
 .header {
     background-image: url("../images/banner/banner-illustration.png"), url("../images/banner/banner-bg.png");
     height: 100vh;
@@ -69,33 +116,11 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 32px;
 }
-
-.header__btn {}
-
-.primary-btn {
-    color: rgb(4, 120, 185);
-    background-color: rgb(255, 255, 255);
-}
-
-.primary-btn:hover {
-    background-color: rgb(255, 212, 46);
-    color: rgb(51, 51, 51);
-    box-shadow: rgb(2, 73, 120) 5px 5px 15px;
-    letter-spacing: 1.5px;
-}
-
-.secondary-btn {
-    background-color: rgb(255, 212, 46);
-    color: rgb(51, 51, 51);
-}
-
-.secondary-btn:hover {
-    color: rgb(4, 120, 185);
-    background-color: rgb(255, 255, 255);
-    letter-spacing: 1.5px;
-}
+/* Header Section End */
 
 
+
+/* Previous Year Section End */
 .previous-year {
     padding: 80px 160px;
     display: flex;
@@ -143,7 +168,10 @@ body {
     color: rgb(8, 181, 77);
     padding-right: 10px;
 }
+/* Previous Year Section Start */
 
+
+/* My Plans Section Start */
 .my-plans {
     padding: 80px 200px;
 }
@@ -184,7 +212,76 @@ body {
     line-height: 28px;
     color: rgb(115, 114, 114);
 }
+/* My Plans Section End */
 
+
+
+/* My Work Section Start */
+.my-work {
+    padding:80px 200px 0 200px;
+    text-align: center;
+}
+
+.my-work__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: rgb(21, 20, 20);
+    margin-bottom: 60px;
+}
+
+.my-work__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-bottom: 30px;
+}
+
+.my-work__project {
+    position: relative;
+    cursor: pointer;
+}
+
+.my-work__project::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(102, 51, 153, 0);
+    transition: all 0.4s;
+}
+
+
+.my-work__project:hover::after{
+    background-image: linear-gradient(to top,rgb(255, 212, 46),rgba(0, 128, 0, 0));
+    height: 100%;
+}
+
+
+.my-work__image {
+    max-width: 100%;
+    display: block;
+}
+
+.my-work__caption {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.my-work__project:hover .my-work__caption {
+    opacity: 1;
+    bottom: 15px;
+}
+/* My Work Section End */
+
+
+/* Call To Action Section Start */
 .call-to-action {
     height: 300px;
     margin: 80px 200px;
@@ -209,6 +306,9 @@ body {
     margin-bottom: 24px;
 }
 
+/* Call To Action Section End */
+
+/* Footer Section Start */
 .footer {
     padding: 120px 200px;
     background-color: rgb(21, 20, 20);
@@ -286,4 +386,4 @@ body {
     width: 100%;
 }
 
-.footer__subscribe-btn {}
+/* Footer Section End */
