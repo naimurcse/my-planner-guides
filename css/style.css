@@ -1,52 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
-
+    font-family: "Work Sans", sans-serif;
 }
 
-/* Button Style Start*/
 .btn {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
     text-align: right;
     cursor: pointer;
-
     padding: 16px 26px;
     border: none;
     border-radius: 5px;
-
-    transition: all 0.3s ease;
+    transition: all 0.3s ease 0s;
 }
 
-/* Button Style End*/
-
-
-/* Header Section Start */
 .header {
-    background-image: url(../images/banner/banner-illustration.png), url(../images/banner/banner-bg.png);
+    background-image: url("../images/banner/banner-illustration.png"), url("../images/banner/banner-bg.png");
     height: 100vh;
     width: 100%;
     background-size: contain, cover;
-
     position: relative;
 }
 
 .header::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
-
     display: block;
-    background-image: linear-gradient(297.52deg, #0478B9 18.76%, rgba(4, 120, 185, 0.9) 43.62%, rgba(4, 120, 185, 0) 75.48%);
+    background-image: linear-gradient(297.52deg, rgb(4, 120, 185) 18.76%, rgba(4, 120, 185, 0.9) 43.62%, rgba(4, 120, 185, 0) 75.48%);
 }
 
 .header__container {
@@ -55,11 +45,10 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 0 120px;
+    padding: 0px 120px;
 }
 
 .header__content {
-    /* margin: 0 120px; */
     width: 45%;
     z-index: 2;
     text-align: right;
@@ -69,8 +58,7 @@ body {
     font-weight: 700;
     font-size: 60px;
     line-height: 76px;
-    /* text-align: right; */
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     margin-bottom: 24px;
 }
 
@@ -78,56 +66,45 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    /* text-align: right; */
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     margin-bottom: 32px;
 }
 
-.header__btn {
-    /* width: max-content; */
-    /* text-align: right; */
-    /* display: inline-block; */
-    /* text-align: right; */
-}
+.header__btn {}
 
 .primary-btn {
-    color: #005FAC;
-    background-color: #FFFFFF;
+    color: rgb(4, 120, 185);
+    background-color: rgb(255, 255, 255);
 }
 
 .primary-btn:hover {
-    background-color: #005FAC;
-    color: #FFFFFF;
-    box-shadow: 5px 5px 15px #024978;
+    background-color: rgb(255, 212, 46);
+    color: rgb(51, 51, 51);
+    box-shadow: rgb(2, 73, 120) 5px 5px 15px;
+    letter-spacing: 1.5px;
 }
 
-/* Header Section End */
-
-/* Previous Year Section Start */
 .previous-year {
-    padding: 80px 200px;
+    padding: 80px 160px;
     display: flex;
     align-items: center;
 }
 
-.previous-year__image {
-    padding: 30px;
-}
+.previous-year__image {}
 
 .previous-year__image img {
-    max-width: 550px;
+    max-width: 530px;
 }
 
-
 .previous-year__content {
-    padding: 30px;
+    padding-left: 100px;
 }
 
 .previous-year__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
-    color: #151414;
+    color: rgb(21, 20, 20);
     margin-bottom: 24px;
 }
 
@@ -135,23 +112,25 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: #444343;
+    color: rgb(68, 67, 67);
     margin-bottom: 16px;
 }
 
-.previous-year__todo-list {}
+.previous-year__todo-list {
+    list-style-type: none;
+}
 
 .previous-year__list-item {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
-    color: #444343;
+    line-height: 34px;
+    color: rgb(68, 67, 67);
+}
+.previous-year__list-item i{
+    color: rgb(8, 181, 77);
+    padding-right: 10px;
 }
 
-/* Previous Year Section End */
-
-
-/* My Plans Section Start */
 .my-plans {
     padding: 80px 200px;
 }
@@ -161,7 +140,7 @@ body {
     font-size: 40px;
     line-height: 47px;
     text-align: center;
-    color: #151414;
+    color: rgb(21, 20, 20);
     margin-bottom: 60px;
 }
 
@@ -176,14 +155,13 @@ body {
 .my-plans__icon {
     width: 92px;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0px auto 20px;
 }
 
 .my-plans__skill-title {
     font-weight: 700;
     font-size: 26px;
-    color: #151414;
+    color: rgb(21, 20, 20);
     margin-bottom: 10px;
 }
 
@@ -191,17 +169,14 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    color: #737272;
+    color: rgb(115, 114, 114);
 }
 
-/* My Plans Section End */
-
-/* Call To Action Section Start */
 .call-to-action {
     height: 300px;
     margin: 80px 200px;
-    padding: 0 65px;
-    background-image: url(../images/gradient1.png), url(../images/watch.png);
+    padding: 0px 65px;
+    background-image: url("../images/gradient1.png"), url("../images/watch.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -217,16 +192,13 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     margin-bottom: 24px;
 }
 
-/* Call To Action Section End */
-
-/* Footer Start */
 .footer {
     padding: 120px 200px;
-    background-color: #151414;
+    background-color: rgb(21, 20, 20);
 }
 
 .footer-container {
@@ -241,7 +213,7 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
-    color: #F8F8F8;
+    color: rgb(248, 248, 248);
     margin-bottom: 24px;
 }
 
@@ -249,7 +221,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     margin-bottom: 15px;
 }
 
@@ -261,8 +233,7 @@ body {
 
 .footer__social-icon {
     cursor: pointer;
-    transition: all 0.4s;
-
+    transition: all 0.4s ease 0s;
     border-radius: 50%;
     padding: 3px;
 }
@@ -273,8 +244,8 @@ body {
 }
 
 .footer__social-icon:hover {
-    transform: scale(.9);
-    box-shadow: 0 0 20px #6cbbf0bc;
+    transform: scale(0.9);
+    box-shadow: rgba(108, 187, 240, 0.737) 0px 0px 20px;
 }
 
 .footer__subscribe {}
@@ -284,5 +255,3 @@ body {
 .footer__subscribe-input {}
 
 .footer__subscribe-btn {}
-
-/* Footer End */
