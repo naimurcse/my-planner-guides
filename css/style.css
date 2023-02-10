@@ -126,7 +126,8 @@ body {
     line-height: 34px;
     color: rgb(68, 67, 67);
 }
-.previous-year__list-item i{
+
+.previous-year__list-item i {
     color: rgb(8, 181, 77);
     padding-right: 10px;
 }
@@ -153,21 +154,21 @@ body {
 .my-plans__skill {}
 
 .my-plans__icon {
-    width: 92px;
+    width: 80px;
     display: block;
     margin: 0px auto 20px;
 }
 
 .my-plans__skill-title {
     font-weight: 700;
-    font-size: 26px;
-    color: rgb(21, 20, 20);
-    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 .my-plans__skill-description {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     color: rgb(115, 114, 114);
 }
